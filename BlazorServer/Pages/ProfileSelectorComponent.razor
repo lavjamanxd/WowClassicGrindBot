@@ -1,5 +1,5 @@
 ﻿@using Core
-@using SharedLib; 
+@using SharedLib;
 @inject Core.IBotController botController
 @inject Core.IAddonReader addonReader
 
@@ -86,7 +86,7 @@
 
     private void OnListBoxChanged(ChangeEventArgs changeEventArgs)
     {
-        selectedProfile = (string)changeEventArgs.Value;
+        selectedProfile = (string)changeEventArgs.Value!;
         disableButton = string.IsNullOrEmpty(selectedProfile);
     }
 

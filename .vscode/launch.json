@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\BlazorServer\\bin\\Debug\\net5.0\\BlazorServer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\BlazorServer",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "sourceFileMap": {
+                "/": "${workspaceFolder}"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            //netdbg
+            // "pipeTransport": {
+            //     "pipeCwd": "${workspaceFolder}\\BlazorServer",
+            //     "pipeProgram": "cmd",
+            //     "pipeArgs": ["/c"],
+            //     "debuggerPath": "c:/netcoredbg/netcoredbg.exe",
+            //     "quoteArgs": true,
+            // }
+        },
+        {
+            "type": "blazorwasm",
+            "name": "Launch and Debug Blazor WebAssembly Application",
+            "request": "launch"
+        }
+    ]
+}
